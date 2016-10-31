@@ -31,6 +31,9 @@ public:
               float centerX, float centerY, float centerZ, 
               float upX, float upY, float upZ);
 
+// overload lookat function
+  void LookAt(glm::vec3, glm::vec3, glm::vec3);
+
   // set the projection (use in Projection mode)
   void Ortho(float left, float right, float bottom, float top, float zNear, float zFar);
   void Frustum(float left, float right, float bottom, float top, float zNear, float zFar);

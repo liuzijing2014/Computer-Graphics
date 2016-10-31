@@ -35,6 +35,12 @@ void OpenGLMatrix::Scale(float x, float y, float z)
   multiplyMatrixToCurrent(S);
 }
 
+void OpenGLMatrix::LookAt(glm::vec3 pos, glm::vec3 front, glm::vec3 up)
+{
+  glm::mat4 V = glm::lookAt(pos, front, up);
+  multiplyMatrixToCurrent(V);
+}
+
 void OpenGLMatrix::LookAt(float eyeX, float eyeY, float eyeZ, float centerX, float centerY, float centerZ, float upX, float upY, float upZ)
 {
   glm::mat4 V = glm::lookAt(glm::vec3(eyeX, eyeY, eyeZ), 
@@ -42,6 +48,7 @@ void OpenGLMatrix::LookAt(float eyeX, float eyeY, float eyeZ, float centerX, flo
                             glm::vec3(upX, upY, upZ));
   multiplyMatrixToCurrent(V);
 }
+
 
 void OpenGLMatrix::Ortho(float left, float right, float bottom, float top, float zNear, float zFar)
 {

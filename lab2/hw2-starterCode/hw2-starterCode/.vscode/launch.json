@@ -7,10 +7,10 @@
             "request": "launch",
             "program": "${workspaceRoot}/hw2",
             "args": ["track.txt"],
-            "stopAtEntry": true,
+            "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
             "environment": [],
-            "externalConsole": false,
+            "externalConsole": true,
             "linux": {
                 "MIMode": "gdb"
             },
