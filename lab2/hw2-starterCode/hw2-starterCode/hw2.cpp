@@ -19,6 +19,8 @@
 #include "basicPipelineProgram.h"
 #include <glm/glm.hpp>
 
+#define DEBUG true
+
 #ifdef WIN
 
 #ifdef _DEBUG
@@ -115,7 +117,9 @@ GLuint skyboxHandler;
 
 // Vertiex array
 vector<Vertex> verticesVector;
-Vertex *vertices;
+
+// Index array for the rollercoaster
+vector<GLuint> indicesVector;
 
 // AnimationPoint vector
 vector<AnimationPoint> aniArray;
@@ -164,6 +168,7 @@ GLuint skyboxIndices[36] = {
     2, 3, 4,
 };
 
+GLuint IndexRail; // rail index buffer handler
 GLuint IndexGd;  // ground index buffer handler
 GLuint IndexSky; // sky index buffer handler
 
@@ -204,7 +209,8 @@ void initPerspective(int, int);
 void setupMatrex();
 void subDivideSegment(float, float, glm::mat4x4&);
 GLuint loadSkybox(const GLchar);
-void addAnimationPoint(float, glm::vec4&, glm::mat4x4&);
+void addAnimationPoint(float, glm::vec3&, glm::mat4x4&);
+void addRailVertices(glm::vec3&, glm::vec3&, glm::vec3&);
 
 // write a screenshot to the specified filename
 void saveScreenshot(const char *filename)
@@ -238,10 +244,11 @@ void displayFunc()
     glBindVertexArray(0);
     glDepthMask(GL_TRUE);
 
+    // Draw rails
     glActiveTexture(GL_TEXTURE0 + 0);
     glBindTexture(GL_TEXTURE_2D, mTextureHandler);
     glBindVertexArray(VaoId);
-    glDrawArrays(GL_LINES, 0, verticesVector.size());
+    glDrawElements(GL_TRIANGLES, indicesVector.size(), GL_UNSIGNED_INT, (GLvoid *)0);
     glBindVertexArray(0);
 
     // glBindTexture(GL_TEXTURE_2D, gdTextureHandler);
@@ -264,7 +271,7 @@ void setupMatrex()
     //change mode to modelview
     openGLMatrix->SetMatrixMode(OpenGLMatrix::ModelView);
     openGLMatrix->LoadIdentity();
-    openGLMatrix->LookAt(position, position + tangent, glm::vec3(0.0, 1.0, 0.0));
+    openGLMatrix->LookAt(position, position + tangent, normal);
     //openGLMatrix->LookAt(0.0f, 2.0f, 2.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
     openGLMatrix->Rotate(landRotate[0], 1.0, 0.0, 0.0);
     openGLMatrix->Rotate(landRotate[1], 0.0, 1.0, 0.0);
@@ -471,34 +478,45 @@ void initVertex()
             subDivideSegment(0.0, 1.0, combinedMatrix);
         }
     }
-    vertices = &verticesVector[0];
 }
 /*
  * Based on u and given combined matrix of control matrix and basis matrix,
  * calculate the current AnimationPoint at u.
  */
-void addAnimationPoint(float u, glm::vec4& v, glm::mat4x4 &matrix)
+void addAnimationPoint(float u, glm::vec3& v, glm::mat4x4 &matrix)
 {
+    static bool firstPoint = true;
+    // The first time calling this function, we need to generate the first point
+    // and its associated tangent, normal, and binormal.
+    if(firstPoint)
+    {
+        #ifdef DEBUG
+            printf("Generate the first point\n");
+        #endif
+        AnimationPoint p;
+        p.tangent = glm::normalize(glm::vec3(glm::vec4(0.0, 0.0, 1, 0) * matrix));
+        p.normal = glm::normalize(glm::cross(p.tangent, glm::vec3(1.0, 0.0, 0.0)));
+        p.binormal = glm::normalize(glm::cross(p.tangent, p.normal));
+        p.position = glm::vec3(glm::vec4(0.0, 0.0, 0.0, 1.0) * matrix) * splineScale;
+        aniArray.push_back(p);
+        firstPoint = false;
+    }
+#ifdef DEBUG
+    //printf("Added Animation Point at U = %f\n", u);
+#endif
     AnimationPoint p;
+
     // Calculate the Tangent t(u) = p'(u) = [3u^2 2u 1 0] M C
     p.tangent = glm::normalize(glm::vec3(glm::vec4(3 * pow(u, 2.0), 2 * u, 1, 0) * matrix));
 
-    // If this is the first point on the spline, generatte its N
-    // by cross T with an arbitrary vector. Otherwise, N = cross(T, B)
-    if (u == 0.0f)
-    {
-        p.normal = glm::normalize(glm::cross(p.tangent, glm::vec3(1.0, 0.0, 0.0)));
-    }
-    else
-    {
-        p.normal = glm::normalize(glm::cross(aniArray[aniCounter].binormal, p.tangent));
-    }
+    // Calculate normal, N = cross(T, B)
+    p.normal = glm::normalize(glm::cross(aniArray[aniCounter].binormal, p.tangent));
 
     // Now calculate binormal by crossing tangent and normal
     p.binormal = glm::normalize(glm::cross(p.tangent, p.normal));
 
     // Set position
-    p.position = glm::vec3(v);
+    p.position = v;
 
     aniArray.push_back(p);
     aniCounter++;
@@ -507,9 +525,11 @@ void addAnimationPoint(float u, glm::vec4& v, glm::mat4x4 &matrix)
 // Subdivide the spline segment to generate vertices
 void subDivideSegment(float u0, float u1, glm::mat4x4 &matrix)
 {
+    static bool firstPoint = true;
+
     float uMid = (u0 + u1) / 2.0;
-    glm::vec4 v0 = glm::vec4(pow(u0, 3.0), pow(u0, 2.0), u0, 1.0) * matrix;
-    glm::vec4 v1 = glm::vec4(pow(u1, 3.0), pow(u1, 2.0), u1, 1.0) * matrix;
+    glm::vec3 v0 = glm::vec3(glm::vec4(pow(u0, 3.0), pow(u0, 2.0), u0, 1.0) * matrix);
+    glm::vec3 v1 = glm::vec3(glm::vec4(pow(u1, 3.0), pow(u1, 2.0), u1, 1.0) * matrix);
 
     if (glm::distance(v1, v0) > maxDistance)
     {
@@ -518,44 +538,190 @@ void subDivideSegment(float u0, float u1, glm::mat4x4 &matrix)
     }
     else
     {
-        v0 *= splineScale;
         v1 *= splineScale;
-        // Add position
-        Vertex v;
-        v.XYZ[0] = v0.x;
-        v.XYZ[1] = v0.y;
-        v.XYZ[2] = v0.z;
-        v.RGBA[0] = v.RGBA[1] = v.RGBA[2] = v.RGBA[3] = 1.0;
-        v.TEX[0] = v.TEX[1] = 0.0;
-        addAnimationPoint(u0, v0, matrix);
-        verticesVector.push_back(v);
-        v.XYZ[0] = v1.x;
-        v.XYZ[1] = v1.y;
-        v.XYZ[2] = v1.z;
         addAnimationPoint(u1, v1, matrix);
-        verticesVector.push_back(v);
+
+        if(firstPoint)
+        {
+            #ifdef DEBUG
+                printf("first point to add position, u = %f\n", u0);
+            #endif
+
+            v0 *= splineScale;
+            addRailVertices(v0, aniArray[0].normal, aniArray[0].binormal);
+            firstPoint = false;
+        }
+
+        GLint index0 = verticesVector.size();
+        addRailVertices(v1, aniArray[aniCounter].normal, aniArray[aniCounter].binormal);
+
+        // Add indices
+        // leftmost face
+        indicesVector.push_back(index0 - 8);
+        indicesVector.push_back(index0);
+        indicesVector.push_back(index0 + 4);
+
+        indicesVector.push_back(index0 + 4);
+        indicesVector.push_back(index0 - 4);
+        indicesVector.push_back(index0 - 8);
+
+        // left top face
+        indicesVector.push_back(index0 - 8);
+        indicesVector.push_back(index0);
+        indicesVector.push_back(index0 + 1);
+
+        indicesVector.push_back(index0 + 1);
+        indicesVector.push_back(index0 - 7);
+        indicesVector.push_back(index0 - 8);
+
+        // 2nd leftmost face
+        indicesVector.push_back(index0 - 7);
+        indicesVector.push_back(index0 + 1);
+        indicesVector.push_back(index0 + 5);
+
+        indicesVector.push_back(index0 + 5);
+        indicesVector.push_back(index0 - 3);
+        indicesVector.push_back(index0 - 7);
+
+        // left bottom face
+        indicesVector.push_back(index0 - 4);
+        indicesVector.push_back(index0 + 4);
+        indicesVector.push_back(index0 + 5);
+
+        indicesVector.push_back(index0 + 5);
+        indicesVector.push_back(index0 - 3);
+        indicesVector.push_back(index0 - 4);
+
+        // 2nd rightmost face
+        indicesVector.push_back(index0 - 6);
+        indicesVector.push_back(index0 + 2);
+        indicesVector.push_back(index0 + 6);
+
+        indicesVector.push_back(index0 + 6);
+        indicesVector.push_back(index0 - 2);
+        indicesVector.push_back(index0 - 6);
+
+        // right top face
+        indicesVector.push_back(index0 - 6);
+        indicesVector.push_back(index0 + 2);
+        indicesVector.push_back(index0 + 3);
+
+        indicesVector.push_back(index0 + 3);
+        indicesVector.push_back(index0 - 5);
+        indicesVector.push_back(index0 - 6);
+
+        // rightmost face
+        indicesVector.push_back(index0 - 5);
+        indicesVector.push_back(index0 + 3);
+        indicesVector.push_back(index0 + 7);
+
+        indicesVector.push_back(index0 + 7);
+        indicesVector.push_back(index0 - 1);
+        indicesVector.push_back(index0 - 5);
+
+        // right bottom face
+        indicesVector.push_back(index0 - 2);
+        indicesVector.push_back(index0 + 6);
+        indicesVector.push_back(index0 + 7);
+
+        indicesVector.push_back(index0 + 7);
+        indicesVector.push_back(index0 - 1);
+        indicesVector.push_back(index0 - 2);
+        
+        //-----------done------------------
     }
+}
+
+
+/*
+ * Given a point on the spline, generate 8 vertices around
+ * this point to form double rail.
+ *          top left        2nd top left        2nd top right       top right
+ *          bottom left     2nd bottom left     2nd bottom right    bottom right
+ */
+void addRailVertices(glm::vec3 &position, glm::vec3 &normal, glm::vec3 &binormal)
+{
+    static float railScale = 0.1f;
+    glm::vec3 curPos;
+    Vertex v;
+    v.RGBA[0] = v.RGBA[1] = v.RGBA[2] = v.RGBA[3] = 1.0;
+    v.TEX[0] = v.TEX[1] = 0.0;
+
+    // top left
+    curPos = position - 3 * railScale * binormal - 0.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // 2nd top left
+    curPos = position - 1 * railScale * binormal - 0.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // 2nd top right
+    curPos = position + 1 * railScale * binormal - 0.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // top right
+    curPos = position + 3 * railScale * binormal - 0.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // bottom left
+    curPos = position - 3 * railScale * binormal - 1.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // 2nd bottom left
+    curPos = position - 1 * railScale * binormal - 1.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // 2nd bottom right
+    curPos = position + 1 * railScale * binormal - 1.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // bottom right
+    curPos = position + 3 * railScale * binormal - 1.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
 }
 
 void initBuffer()
 {
     const size_t BufferSize = sizeof(Vertex) * verticesVector.size();
-    const size_t VertexSize = sizeof(vertices[0]);
-    const size_t RgbOffset = sizeof(vertices[0].XYZ);
-    const size_t TexOffset = sizeof(vertices[0].XYZ) + sizeof(vertices[0].RGBA);
+    const size_t VertexSize = sizeof(verticesVector[0]);
+    const size_t RgbOffset = sizeof(verticesVector[0].XYZ);
+    const size_t TexOffset = sizeof(verticesVector[0].XYZ) + sizeof(verticesVector[0].RGBA);
 
     GLuint pos = glGetAttribLocation(programId, "position");
     GLuint col = glGetAttribLocation(programId, "color");
     GLuint tex = glGetAttribLocation(programId, "texcoord");
 
-    // Generate VAO and bind it
+    // Generate rail VBO and VAO
     glGenVertexArrays(1, &VaoId);
     glBindVertexArray(VaoId);
 
-    // Generate VBOs and bind them
     glGenBuffers(1, &BufferId);
     glBindBuffer(GL_ARRAY_BUFFER, BufferId);
-    glBufferData(GL_ARRAY_BUFFER, BufferSize, vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, BufferSize, verticesVector.data(), GL_STATIC_DRAW);
 
     glVertexAttribPointer(pos, 3, GL_FLOAT, GL_FALSE, VertexSize, 0);
     glEnableVertexAttribArray(pos);
@@ -563,6 +729,10 @@ void initBuffer()
     glEnableVertexAttribArray(col);
     glVertexAttribPointer(tex, 2, GL_FLOAT, GL_FALSE, VertexSize, (GLvoid *)TexOffset);
     glEnableVertexAttribArray(tex);
+
+    glGenBuffers(1, &IndexRail);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IndexRail);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLuint) * indicesVector.size(), indicesVector.data(), GL_STATIC_DRAW);
 
     glBindVertexArray(0);
 
@@ -581,7 +751,6 @@ void initBuffer()
     glVertexAttribPointer(tex, 2, GL_FLOAT, GL_FALSE, VertexSize, (GLvoid *)TexOffset);
     glEnableVertexAttribArray(tex);
 
-    // Index buffer
     glGenBuffers(1, &IndexGd);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IndexGd);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLuint) * 6, groundIndices, GL_STATIC_DRAW);
