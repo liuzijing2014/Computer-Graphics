@@ -648,35 +648,35 @@ void addRailVertices(glm::vec3 &position, glm::vec3 &normal, glm::vec3 &binormal
     v.TEX[0] = v.TEX[1] = 0.0;
 
     // top left
-    curPos = position - 3 * railScale * binormal - 0.5f * railScale * normal;
+    curPos = position - 2 * railScale * binormal - 1.0f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
     verticesVector.push_back(v);
 
     // 2nd top left
-    curPos = position - 1 * railScale * binormal - 0.5f * railScale * normal;
+    curPos = position - 1 * railScale * binormal - 1.0f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
     verticesVector.push_back(v);
 
     // 2nd top right
-    curPos = position + 1 * railScale * binormal - 0.5f * railScale * normal;
+    curPos = position + 1 * railScale * binormal - 1.0f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
     verticesVector.push_back(v);
 
     // top right
-    curPos = position + 3 * railScale * binormal - 0.5f * railScale * normal;
+    curPos = position + 2 * railScale * binormal - 1.0f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
     verticesVector.push_back(v);
 
     // bottom left
-    curPos = position - 3 * railScale * binormal - 1.5f * railScale * normal;
+    curPos = position - 2 * railScale * binormal - 1.0f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
@@ -697,7 +697,7 @@ void addRailVertices(glm::vec3 &position, glm::vec3 &normal, glm::vec3 &binormal
     verticesVector.push_back(v);
 
     // bottom right
-    curPos = position + 3 * railScale * binormal - 1.5f * railScale * normal;
+    curPos = position + 2 * railScale * binormal - 1.5f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
