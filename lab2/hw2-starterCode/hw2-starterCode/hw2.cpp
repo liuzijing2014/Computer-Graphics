@@ -11,6 +11,7 @@
 #include <cstdio>
 #include <vector>
 #include <math.h>
+#include <limits>
 #include "openGLHeader.h"
 #include "glutHeader.h"
 
@@ -105,6 +106,9 @@ GLuint mTextureHandler;
 const char *gdImageFilename = "./textures/sand.jpg";
 GLuint gdTextureHandler;
 
+const char *cbImageFilename = "./textures/wood.jpg";
+GLuint cbTextureHandler;
+
 const GLchar *faces[6] = {
     "./textures/right.jpg",
     "./textures/left.jpg",
@@ -115,23 +119,27 @@ const GLchar *faces[6] = {
 
 GLuint skyboxHandler;
 
-// Vertiex array
+// Vertiex array for the rails
 vector<Vertex> verticesVector;
-
-// Index array for the rollercoaster
+// Index array for the rails
 vector<GLuint> indicesVector;
+
+// Vertex array for the cross bars
+vector<Vertex> crossbarVertices;
+// Index array for the cross bars
+vector<GLuint> crossbarIndices;
 
 // AnimationPoint vector
 vector<AnimationPoint> aniArray;
-// Index counter for aniArray;
+// Index counter for aniArray; 
 GLint aniCounter = 0;
 
 // Ground vertice
 Vertex groundVertices[4] = {
-    {{-32.0, 0.0, -32.0}, {1.0, 1.0, 1.0, 1.0}, {0.0, 0.0}},
-    {{-32.0, 0.0, 32.0}, {1.0, 1.0, 1.0, 1.0}, {0.0, 32.0}},
-    {{32.0, 0.0, 32.0}, {1.0, 1.0, 1.0, 1.0}, {32.0, 32.0}},
-    {{32.0, 0.0, -32.0}, {1.0, 1.0, 1.0, 1.0}, {32.0, 0.0}},
+    {{-64.0, 0.0, -64.0}, {1.0, 1.0, 1.0, 1.0}, {0.0, 0.0}},
+    {{-64.0, 0.0, 64.0}, {1.0, 1.0, 1.0, 1.0}, {0.0, 32.0}},
+    {{64.0, 0.0, 64.0}, {1.0, 1.0, 1.0, 1.0}, {32.0, 32.0}},
+    {{64.0, 0.0, -64.0}, {1.0, 1.0, 1.0, 1.0}, {32.0, 0.0}},
 };
 
 // Ground indices
@@ -171,17 +179,21 @@ GLuint skyboxIndices[36] = {
 GLuint IndexRail; // rail index buffer handler
 GLuint IndexGd;  // ground index buffer handler
 GLuint IndexSky; // sky index buffer handler
+GLuint IndexCb;  // cross bar index buffer handler
 
 GLuint programId;
 GLuint VaoId;
 GLuint VaoGd;  // ground VAO
 GLuint VaoSky; // skybox VAO
+GLuint VaoCb; // cross bar VAO
 GLuint BufferId;
 GLuint BufferGd;  // ground buffer
 GLuint BufferSky; // skybox buffer
+GLuint BufferCb; // cross bar buffer
 
 float sFactor = 1.0f;
-float splineScale = 1.0f;
+float splineScale = 1.5f;
+float railScale = 0.1f;
 
 // Helper lib pointers
 BasicPipelineProgram *pipelineProgram;
@@ -201,6 +213,13 @@ glm::mat4x4 basisMatrix = glm::mat4x4(-0.5, 1.0, -0.5, 0.0,
 
 // Max distance
 float maxDistance = 0.05f;
+// lowest/highest spline altitude
+float lowest = FLT_MAX;
+float highest = -FLT_MAX;
+
+// physics related variables
+int oldTime = 0;
+float velocity = 1.0f;
 
 // Functions decleared
 void initBuffer();
@@ -211,6 +230,9 @@ void subDivideSegment(float, float, glm::mat4x4&);
 GLuint loadSkybox(const GLchar);
 void addAnimationPoint(float, glm::vec3&, glm::mat4x4&);
 void addRailVertices(glm::vec3&, glm::vec3&, glm::vec3&);
+void addRailIndices(GLuint);
+void addCrossbarVertices(glm::vec3&, glm::vec3&, glm::vec3&, glm::vec3&);
+void updateGroundHeight();
 
 // write a screenshot to the specified filename
 void saveScreenshot(const char *filename)
@@ -251,10 +273,16 @@ void displayFunc()
     glDrawElements(GL_TRIANGLES, indicesVector.size(), GL_UNSIGNED_INT, (GLvoid *)0);
     glBindVertexArray(0);
 
-    // glBindTexture(GL_TEXTURE_2D, gdTextureHandler);
-    // glBindVertexArray(VaoGd);
-    // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (GLvoid*)0);
-    // glBindVertexArray(0);
+    // Draw cross bar
+    glBindTexture(GL_TEXTURE_2D, cbTextureHandler);
+    glBindVertexArray(VaoCb);
+    glDrawElements(GL_TRIANGLES, crossbarIndices.size(), GL_UNSIGNED_INT, (GLvoid *)0);
+    glBindVertexArray(0);   
+
+    glBindTexture(GL_TEXTURE_2D, gdTextureHandler);
+    glBindVertexArray(VaoGd);
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (GLvoid*)0);
+    glBindVertexArray(0);
 
     glFlush();
     glutSwapBuffers();
@@ -263,10 +291,33 @@ void displayFunc()
 // Setup modelview and upload the matrix to GPU
 void setupMatrex()
 {
+    static float preHeight;
     glm::vec3 &position = aniArray[aniCounter].position;
     glm::vec3 &tangent = aniArray[aniCounter].tangent;
     glm::vec3 &normal = aniArray[aniCounter].normal;
-    aniCounter += 2;
+
+    // if(aniCounter == 0)
+    // {
+    //     preHeight = position.y;
+    //     aniCounter += 2;
+    // }
+    // else if(position.y > preHeight && (aniCounter + 1 < aniArray.size())) 
+    // {
+    //     aniCounter++;
+    // }
+    // else if(position.y == preHeight && (aniCounter + 2 < aniArray.size()))
+    // {
+    //     aniCounter += 2;
+    // }
+    // else if(position.y < preHeight && (aniCounter + 3 < aniArray.size()))
+    // {
+    //     aniCounter += 3;
+    // }
+
+    if((aniCounter + 2) < aniArray.size())
+    {
+        aniCounter += 2;
+    }
 
     //change mode to modelview
     openGLMatrix->SetMatrixMode(OpenGLMatrix::ModelView);
@@ -526,6 +577,8 @@ void addAnimationPoint(float u, glm::vec3& v, glm::mat4x4 &matrix)
 void subDivideSegment(float u0, float u1, glm::mat4x4 &matrix)
 {
     static bool firstPoint = true;
+    static GLuint drawCrossbar = 0;
+    static GLuint crossbarDis = 35;
 
     float uMid = (u0 + u1) / 2.0;
     glm::vec3 v0 = glm::vec3(glm::vec4(pow(u0, 3.0), pow(u0, 2.0), u0, 1.0) * matrix);
@@ -538,7 +591,19 @@ void subDivideSegment(float u0, float u1, glm::mat4x4 &matrix)
     }
     else
     {
+
+
         v1 *= splineScale;
+        // update lowest/highest
+        if(v1.z < lowest)
+        {
+            lowest = v1.z;
+        }
+        else if(v1.z > highest)
+        {
+            highest = v1.z;
+        }
+
         addAnimationPoint(u1, v1, matrix);
 
         if(firstPoint)
@@ -548,90 +613,236 @@ void subDivideSegment(float u0, float u1, glm::mat4x4 &matrix)
             #endif
 
             v0 *= splineScale;
+            if(v0.z < lowest)
+            {
+                lowest = v0.z;
+            }
+            else if(v0.z > highest)
+            {
+                highest = v0.z;
+            }
             addRailVertices(v0, aniArray[0].normal, aniArray[0].binormal);
             firstPoint = false;
         }
 
-        GLint index0 = verticesVector.size();
+        GLuint index0 = verticesVector.size();
         addRailVertices(v1, aniArray[aniCounter].normal, aniArray[aniCounter].binormal);
+        addRailIndices(index0);
 
-        // Add indices
-        // leftmost face
-        indicesVector.push_back(index0 - 8);
-        indicesVector.push_back(index0);
-        indicesVector.push_back(index0 + 4);
-
-        indicesVector.push_back(index0 + 4);
-        indicesVector.push_back(index0 - 4);
-        indicesVector.push_back(index0 - 8);
-
-        // left top face
-        indicesVector.push_back(index0 - 8);
-        indicesVector.push_back(index0);
-        indicesVector.push_back(index0 + 1);
-
-        indicesVector.push_back(index0 + 1);
-        indicesVector.push_back(index0 - 7);
-        indicesVector.push_back(index0 - 8);
-
-        // 2nd leftmost face
-        indicesVector.push_back(index0 - 7);
-        indicesVector.push_back(index0 + 1);
-        indicesVector.push_back(index0 + 5);
-
-        indicesVector.push_back(index0 + 5);
-        indicesVector.push_back(index0 - 3);
-        indicesVector.push_back(index0 - 7);
-
-        // left bottom face
-        indicesVector.push_back(index0 - 4);
-        indicesVector.push_back(index0 + 4);
-        indicesVector.push_back(index0 + 5);
-
-        indicesVector.push_back(index0 + 5);
-        indicesVector.push_back(index0 - 3);
-        indicesVector.push_back(index0 - 4);
-
-        // 2nd rightmost face
-        indicesVector.push_back(index0 - 6);
-        indicesVector.push_back(index0 + 2);
-        indicesVector.push_back(index0 + 6);
-
-        indicesVector.push_back(index0 + 6);
-        indicesVector.push_back(index0 - 2);
-        indicesVector.push_back(index0 - 6);
-
-        // right top face
-        indicesVector.push_back(index0 - 6);
-        indicesVector.push_back(index0 + 2);
-        indicesVector.push_back(index0 + 3);
-
-        indicesVector.push_back(index0 + 3);
-        indicesVector.push_back(index0 - 5);
-        indicesVector.push_back(index0 - 6);
-
-        // rightmost face
-        indicesVector.push_back(index0 - 5);
-        indicesVector.push_back(index0 + 3);
-        indicesVector.push_back(index0 + 7);
-
-        indicesVector.push_back(index0 + 7);
-        indicesVector.push_back(index0 - 1);
-        indicesVector.push_back(index0 - 5);
-
-        // right bottom face
-        indicesVector.push_back(index0 - 2);
-        indicesVector.push_back(index0 + 6);
-        indicesVector.push_back(index0 + 7);
-
-        indicesVector.push_back(index0 + 7);
-        indicesVector.push_back(index0 - 1);
-        indicesVector.push_back(index0 - 2);
-        
-        //-----------done------------------
+        // Check if we need to add a cross bar
+        if(drawCrossbar >= crossbarDis)
+        {
+            addCrossbarVertices(v1, aniArray[aniCounter].normal, aniArray[aniCounter].binormal, aniArray[aniCounter].tangent);
+            drawCrossbar = 0;
+        }
+        else
+        {
+            drawCrossbar++;
+        }
     }
 }
 
+void addCrossbarVertices(glm::vec3 &position, glm::vec3 &normal, glm::vec3 &binormal, glm::vec3& tangent)
+{
+    glm::vec3 curPos;
+    GLuint index0 = crossbarVertices.size();
+    Vertex v;
+    v.RGBA[0] = v.RGBA[1] = v.RGBA[2] = v.RGBA[3] = 1.0;
+
+    // top four vertices
+    curPos = position - 3 * railScale * binormal - 2.0f * railScale * normal - 0.75f * railScale * tangent;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    v.TEX[0] = 0.0f;
+    v.TEX[1] = 0.0f;
+    crossbarVertices.push_back(v);
+
+    curPos = position - 3 * railScale * binormal - 2.0f * railScale * normal + 0.75f * railScale * tangent;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    v.TEX[0] = 0.0f;
+    v.TEX[1] = 1.0f;
+    crossbarVertices.push_back(v);
+
+    curPos = position + 3 * railScale * binormal - 2.0f * railScale * normal + 0.75f * railScale * tangent;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    v.TEX[0] = 1.0f;
+    v.TEX[1] = 1.0f;
+    crossbarVertices.push_back(v);
+
+    curPos = position + 3 * railScale * binormal - 2.0f * railScale * normal - 0.75f * railScale * tangent;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    v.TEX[0] = 1.0f;
+    v.TEX[1] = 0.0f;
+    crossbarVertices.push_back(v);
+
+    // bottom four vertices
+    curPos = position - 3 * railScale * binormal - 2.5f * railScale * normal - 0.75f * railScale * tangent;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    v.TEX[0] = 1.0f;
+    v.TEX[1] = 1.0f;
+    crossbarVertices.push_back(v);
+
+    curPos = position - 3 * railScale * binormal - 2.5f * railScale * normal + 0.75f * railScale * tangent;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    v.TEX[0] = 1.0f;
+    v.TEX[1] = 0.0f;
+    crossbarVertices.push_back(v);
+
+    curPos = position + 3 * railScale * binormal - 2.5f * railScale * normal + 0.75f * railScale * tangent;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    v.TEX[0] = 0.0f;
+    v.TEX[1] = 0.0f;
+    crossbarVertices.push_back(v);
+
+    curPos = position + 3 * railScale * binormal - 2.5f * railScale * normal - 0.75f * railScale * tangent;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    v.TEX[0] = 0.0f;
+    v.TEX[1] = 1.0f;
+    crossbarVertices.push_back(v);
+
+    // Add indices
+    crossbarIndices.push_back(index0);
+    crossbarIndices.push_back(index0+1);
+    crossbarIndices.push_back(index0+5);
+
+    crossbarIndices.push_back(index0+5);
+    crossbarIndices.push_back(index0+4);
+    crossbarIndices.push_back(index0);
+
+    crossbarIndices.push_back(index0);
+    crossbarIndices.push_back(index0+1);
+    crossbarIndices.push_back(index0+2);
+
+    crossbarIndices.push_back(index0+2);
+    crossbarIndices.push_back(index0+3);
+    crossbarIndices.push_back(index0);
+
+    crossbarIndices.push_back(index0+3);
+    crossbarIndices.push_back(index0+2);
+    crossbarIndices.push_back(index0+6);
+    
+    crossbarIndices.push_back(index0+6);
+    crossbarIndices.push_back(index0+7);
+    crossbarIndices.push_back(index0+3);
+
+    crossbarIndices.push_back(index0+4);
+    crossbarIndices.push_back(index0+5);
+    crossbarIndices.push_back(index0+6);
+
+    crossbarIndices.push_back(index0+6);
+    crossbarIndices.push_back(index0+7);
+    crossbarIndices.push_back(index0+4);
+
+    crossbarIndices.push_back(index0);
+    crossbarIndices.push_back(index0+3);
+    crossbarIndices.push_back(index0+7);
+
+    crossbarIndices.push_back(index0+7);
+    crossbarIndices.push_back(index0+4);
+    crossbarIndices.push_back(index0);
+
+    crossbarIndices.push_back(index0+1);
+    crossbarIndices.push_back(index0+2);
+    crossbarIndices.push_back(index0+6);
+
+    crossbarIndices.push_back(index0+6);
+    crossbarIndices.push_back(index0+5);
+    crossbarIndices.push_back(index0+1);
+}
+
+/*
+ * Calculate the indices for triangles
+ */
+void addRailIndices(GLuint index0)
+{
+    // Add indices
+    // leftmost face
+    indicesVector.push_back(index0 - 8);
+    indicesVector.push_back(index0);
+    indicesVector.push_back(index0 + 4);
+
+    indicesVector.push_back(index0 + 4);
+    indicesVector.push_back(index0 - 4);
+    indicesVector.push_back(index0 - 8);
+
+    // left top face
+    indicesVector.push_back(index0 - 8);
+    indicesVector.push_back(index0);
+    indicesVector.push_back(index0 + 1);
+
+    indicesVector.push_back(index0 + 1);
+    indicesVector.push_back(index0 - 7);
+    indicesVector.push_back(index0 - 8);
+
+    // 2nd leftmost face
+    indicesVector.push_back(index0 - 7);
+    indicesVector.push_back(index0 + 1);
+    indicesVector.push_back(index0 + 5);
+
+    indicesVector.push_back(index0 + 5);
+    indicesVector.push_back(index0 - 3);
+    indicesVector.push_back(index0 - 7);
+
+    // left bottom face
+    indicesVector.push_back(index0 - 4);
+    indicesVector.push_back(index0 + 4);
+    indicesVector.push_back(index0 + 5);
+
+    indicesVector.push_back(index0 + 5);
+    indicesVector.push_back(index0 - 3);
+    indicesVector.push_back(index0 - 4);
+
+    // 2nd rightmost face
+    indicesVector.push_back(index0 - 6);
+    indicesVector.push_back(index0 + 2);
+    indicesVector.push_back(index0 + 6);
+
+    indicesVector.push_back(index0 + 6);
+    indicesVector.push_back(index0 - 2);
+    indicesVector.push_back(index0 - 6);
+
+    // right top face
+    indicesVector.push_back(index0 - 6);
+    indicesVector.push_back(index0 + 2);
+    indicesVector.push_back(index0 + 3);
+
+    indicesVector.push_back(index0 + 3);
+    indicesVector.push_back(index0 - 5);
+    indicesVector.push_back(index0 - 6);
+
+    // rightmost face
+    indicesVector.push_back(index0 - 5);
+    indicesVector.push_back(index0 + 3);
+    indicesVector.push_back(index0 + 7);
+
+    indicesVector.push_back(index0 + 7);
+    indicesVector.push_back(index0 - 1);
+    indicesVector.push_back(index0 - 5);
+
+    // right bottom face
+    indicesVector.push_back(index0 - 2);
+    indicesVector.push_back(index0 + 6);
+    indicesVector.push_back(index0 + 7);
+
+    indicesVector.push_back(index0 + 7);
+    indicesVector.push_back(index0 - 1);
+    indicesVector.push_back(index0 - 2);
+}
 
 /*
  * Given a point on the spline, generate 8 vertices around
@@ -641,63 +852,63 @@ void subDivideSegment(float u0, float u1, glm::mat4x4 &matrix)
  */
 void addRailVertices(glm::vec3 &position, glm::vec3 &normal, glm::vec3 &binormal)
 {
-    static float railScale = 0.1f;
     glm::vec3 curPos;
     Vertex v;
     v.RGBA[0] = v.RGBA[1] = v.RGBA[2] = v.RGBA[3] = 1.0;
-    v.TEX[0] = v.TEX[1] = 0.0;
+    v.TEX[0] = 0.1f;
+    v.TEX[1] = 0.8f;
 
     // top left
-    curPos = position - 2 * railScale * binormal - 1.0f * railScale * normal;
+    curPos = position - 2 * railScale * binormal - 1.5f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
     verticesVector.push_back(v);
 
     // 2nd top left
-    curPos = position - 1 * railScale * binormal - 1.0f * railScale * normal;
-    v.XYZ[0] = curPos.x;
-    v.XYZ[1] = curPos.y;
-    v.XYZ[2] = curPos.z;
-    verticesVector.push_back(v);
-
-    // 2nd top right
-    curPos = position + 1 * railScale * binormal - 1.0f * railScale * normal;
-    v.XYZ[0] = curPos.x;
-    v.XYZ[1] = curPos.y;
-    v.XYZ[2] = curPos.z;
-    verticesVector.push_back(v);
-
-    // top right
-    curPos = position + 2 * railScale * binormal - 1.0f * railScale * normal;
-    v.XYZ[0] = curPos.x;
-    v.XYZ[1] = curPos.y;
-    v.XYZ[2] = curPos.z;
-    verticesVector.push_back(v);
-
-    // bottom left
-    curPos = position - 2 * railScale * binormal - 1.0f * railScale * normal;
-    v.XYZ[0] = curPos.x;
-    v.XYZ[1] = curPos.y;
-    v.XYZ[2] = curPos.z;
-    verticesVector.push_back(v);
-
-    // 2nd bottom left
     curPos = position - 1 * railScale * binormal - 1.5f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
     verticesVector.push_back(v);
 
-    // 2nd bottom right
+    // 2nd top right
     curPos = position + 1 * railScale * binormal - 1.5f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
     verticesVector.push_back(v);
 
-    // bottom right
+    // top right
     curPos = position + 2 * railScale * binormal - 1.5f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // bottom left
+    curPos = position - 2 * railScale * binormal - 2.0f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // 2nd bottom left
+    curPos = position - 1 * railScale * binormal - 2.0f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // 2nd bottom right
+    curPos = position + 1 * railScale * binormal - 2.0f * railScale * normal;
+    v.XYZ[0] = curPos.x;
+    v.XYZ[1] = curPos.y;
+    v.XYZ[2] = curPos.z;
+    verticesVector.push_back(v);
+
+    // bottom right
+    curPos = position + 2 * railScale * binormal - 2.0f * railScale * normal;
     v.XYZ[0] = curPos.x;
     v.XYZ[1] = curPos.y;
     v.XYZ[2] = curPos.z;
@@ -733,6 +944,27 @@ void initBuffer()
     glGenBuffers(1, &IndexRail);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IndexRail);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLuint) * indicesVector.size(), indicesVector.data(), GL_STATIC_DRAW);
+
+    glBindVertexArray(0);
+
+    // Generate the crossbar VAO and VBO
+    glGenVertexArrays(1, &VaoCb);
+    glBindVertexArray(VaoCb);
+
+    glGenBuffers(1, &BufferCb);
+    glBindBuffer(GL_ARRAY_BUFFER, BufferCb);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * crossbarVertices.size(), crossbarVertices.data(), GL_STATIC_DRAW);
+
+    glVertexAttribPointer(pos, 3, GL_FLOAT, GL_FALSE, VertexSize, 0);
+    glEnableVertexAttribArray(pos);
+    glVertexAttribPointer(col, 4, GL_FLOAT, GL_FALSE, VertexSize, (GLvoid *)RgbOffset);
+    glEnableVertexAttribArray(col);
+    glVertexAttribPointer(tex, 2, GL_FLOAT, GL_FALSE, VertexSize, (GLvoid *)TexOffset);
+    glEnableVertexAttribArray(tex);
+
+    glGenBuffers(1, &IndexCb);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IndexCb);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLuint) * crossbarIndices.size(), crossbarIndices.data(), GL_STATIC_DRAW);
 
     glBindVertexArray(0);
 
@@ -841,6 +1073,14 @@ GLuint loadSkybox()
     glBindTexture(GL_TEXTURE_CUBE_MAP, 0);
 
     return textureID;
+}
+
+void updateGroundHeight()
+{
+    for (int i = 0; i < 4; i++)
+    {
+        groundVertices[i].XYZ[1] = lowest - 10.0f;
+    }
 }
 
 int initTexture(const char *imageFilename, GLuint textureHandle)
@@ -1009,8 +1249,16 @@ void initScene()
         exit(EXIT_FAILURE);
     }
 
+    glGenTextures(1, &cbTextureHandler);
+    if (initTexture(cbImageFilename, cbTextureHandler) != 0)
+    {
+        cout << "Error reading cross bar image texture." << endl;
+        exit(EXIT_FAILURE);
+    }
+
     // Initialize
     initVertex();
+    updateGroundHeight();
     initBuffer();
     initPerspective(windowWidth, windowHeight);
 
