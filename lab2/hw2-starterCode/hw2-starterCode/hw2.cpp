@@ -218,8 +218,13 @@ float lowest = FLT_MAX;
 float highest = -FLT_MAX;
 
 // physics related variables
-int oldTime = 0;
-float velocity = 1.0f;
+float vi = 1.25f;
+float a = 0.0f;
+float t = 0.1f;
+glm::vec3 g = glm::vec3(0.0f, -0.075f, 0.0f);
+
+// pause control flag
+bool pause = false;
 
 // Functions decleared
 void initBuffer();
@@ -291,32 +296,22 @@ void displayFunc()
 // Setup modelview and upload the matrix to GPU
 void setupMatrex()
 {
-    static float preHeight;
     glm::vec3 &position = aniArray[aniCounter].position;
     glm::vec3 &tangent = aniArray[aniCounter].tangent;
     glm::vec3 &normal = aniArray[aniCounter].normal;
 
-    // if(aniCounter == 0)
-    // {
-    //     preHeight = position.y;
-    //     aniCounter += 2;
-    // }
-    // else if(position.y > preHeight && (aniCounter + 1 < aniArray.size())) 
-    // {
-    //     aniCounter++;
-    // }
-    // else if(position.y == preHeight && (aniCounter + 2 < aniArray.size()))
-    // {
-    //     aniCounter += 2;
-    // }
-    // else if(position.y < preHeight && (aniCounter + 3 < aniArray.size()))
-    // {
-    //     aniCounter += 3;
-    // }
-
-    if((aniCounter + 2) < aniArray.size())
+    // determine the real speed
+    if(aniCounter + 2 < aniArray.size() && !pause)
     {
-        aniCounter += 2;
+        a =  glm::dot(g, tangent);
+        a = a < -1.5f ? -1.5f : a;
+        a = a > 1.5f ? 1.5f : a;
+        float vf = vi + a * t;
+        vf = vf <= 0.5f ? 0.5f : vf;
+        vf = vf > 2.0f ? 2.0f : vf;
+        float p = (vi + vf) * t / 2.0f;
+        aniCounter += floor(p / maxDistance);
+        vi = vf;
     }
 
     //change mode to modelview
@@ -509,6 +504,13 @@ void keyboardFunc(unsigned char key, int x, int y)
         // take a screenshot
         saveScreenshot("screenshot.jpg");
         break;
+    case 'r':
+        aniCounter = 0;
+         vi = 1.25f;
+         a = 0.0f;
+         t = 0.1f;
+    case 's':
+        pause = pause ? false : true;
     }
 }
 
