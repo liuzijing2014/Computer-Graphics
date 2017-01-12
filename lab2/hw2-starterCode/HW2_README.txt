@@ -89,6 +89,16 @@ Names of the .cpp files you made changes to:
 4. Makefile
 
 Comments : (If any)
-"make" to build the hw2, and then "./hw2 track.txt" to run the program.
+1. "make" to build the hw2, and then "./hw2 track.txt" to run the program.
+2. I rendered the ground within the skybox. If you want to see the ground that rendered in the normal way, just search
+   the following code inside hw2.cpp, uncomment them, and make. Then run "./hw2 track.txt", you will see a ground rendered
+   in the normal way.
+
+    /* Render Ground Begin */
+    // glBindTexture(GL_TEXTURE_2D, gdTextureHandler);
+    // glBindVertexArray(VaoGd);
+    // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (GLvoid*)0);
+    // glBindVertexArray(0);
+    /* Render Ground End */
 
 

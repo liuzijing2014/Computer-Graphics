@@ -284,10 +284,13 @@ void displayFunc()
     glDrawElements(GL_TRIANGLES, crossbarIndices.size(), GL_UNSIGNED_INT, (GLvoid *)0);
     glBindVertexArray(0);   
 
-    glBindTexture(GL_TEXTURE_2D, gdTextureHandler);
-    glBindVertexArray(VaoGd);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (GLvoid*)0);
-    glBindVertexArray(0);
+
+    /* Render Ground Begin */
+    // glBindTexture(GL_TEXTURE_2D, gdTextureHandler);
+    // glBindVertexArray(VaoGd);
+    // glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, (GLvoid*)0);
+    // glBindVertexArray(0);
+    /* Render Ground End */
 
     glFlush();
     glutSwapBuffers();
@@ -489,16 +492,6 @@ void keyboardFunc(unsigned char key, int x, int y)
         exit(0); // exit the program
         break;
     case ' ':
-        if (screenshot)
-        {
-            screenshot = false;
-            cout << "Stop recording frames" << endl;
-        }
-        else
-        {
-            screenshot = true;
-            cout << "Start recording frames" << endl;
-        }
         break;
     case 'x':
         // take a screenshot

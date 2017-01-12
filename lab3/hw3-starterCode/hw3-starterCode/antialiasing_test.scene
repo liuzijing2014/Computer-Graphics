@@ -1,0 +1,4613 @@
+289
+amb: 0 0 0
+light
+pos: -1 0.333 -1
+col: 100 100 100
+triangle
+pos: -18 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -18 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -18 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -18 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -18 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -18 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -18 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -18 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -18 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -18 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -18 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -18 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -18 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -18 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -18 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -15 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -15 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -15 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -15 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -12 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -12 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -12 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -12 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -9 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -9 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -9 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -9 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -6 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -6 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -6 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -6 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: -3 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: -3 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: -3 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: -3 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 0 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 0 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 0 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 0 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 3 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 3 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 3 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 3 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 6 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 6 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 6 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 6 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 9 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 9 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 9 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 9 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -42
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 12 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 12 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 12 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 12 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -6
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -39
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -42
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -36
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -39
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -33
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -36
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -30
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -33
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -27
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -30
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -24
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -27
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -21
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -24
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -18
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -21
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -15
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -18
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -12
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -15
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 15 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -9
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+pos: 18 -1.05 -12
+nor: 0 1.0 0
+dif: 1.0 1.0 1.0
+spe: 1.0 1.0 1.0
+shi: 1.0
+triangle
+pos: 15 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 15 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+triangle
+pos: 15 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -6
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
+pos: 18 -1.05 -9
+nor: 0 1.0 0
+dif: 0 0 0
+spe: 0 0 0
+shi: 0
